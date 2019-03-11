@@ -11,13 +11,14 @@
 9. In all the exercise, you should try to follow PSR-0, PSR-1 and PSR-2
 10. Generally speaking, the more decoupled your code, the better, so do not hesitate to create as many classes and namespaces as you wish
 
-`
+
+```xml
 <item>
-<title>Marqués de Riscal Vino Tinto Reserva D.O. Rioja</title>
-<link>https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408</link>
-<pubDate>Mon, 10 Sep 2011 17:20:00 +0100</pubDate>
+	<title>Marqués de Riscal Vino Tinto Reserva D.O. Rioja</title>
+	<link>https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408</link>
+	<pubDate>Mon, 10 Sep 2011 17:20:00 +0100</pubDate>
 </item>
-`
+```
 
 And Product object should look like
 
