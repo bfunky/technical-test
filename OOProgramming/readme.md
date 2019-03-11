@@ -1,4 +1,5 @@
 # Instructions for OOP test
+
 1. You must create a class extending FeedParserBase following Object Oriented Programming Best Practices
 2. This class must load the feed products.xml throught method 'parse'. Feed location must be set in var $_strFeedUrl.
 3. Your class must log start and end of parsing process and also every item parsed with method notify in class 'InfoLogger'.
@@ -12,7 +13,7 @@
 
 `
 <item>
-<title>MarquÃ©s de Riscal Vino Tinto Reserva D.O. Rioja</title>
+<title>Marqués de Riscal Vino Tinto Reserva D.O. Rioja</title>
 <link>https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408</link>
 <pubDate>Mon, 10 Sep 2011 17:20:00 +0100</pubDate>
 </item>
@@ -20,7 +21,7 @@
 
 And Product object should look like
 
-name: MarquÃ©s de Riscal Vino Tinto Reserva D.O. Rioja
+name: Marqués de Riscal Vino Tinto Reserva D.O. Rioja
 id: 7408
 date: 2011-09-10 17:20:00
 url: https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408
