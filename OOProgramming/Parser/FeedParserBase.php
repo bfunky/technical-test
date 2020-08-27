@@ -1,9 +1,9 @@
 <?php
 
-namespace Parser;
+namespace Isurance\OOProgramming\Observer\Parser;
 
-use Observer\IObserver;
-use Observer\IObservable;
+use Isurance\OOProgramming\Observer\IObserver;
+use Isurance\OOProgramming\Observer\IObservable;
 
 abstract class FeedParserBase implements IObservable
 {

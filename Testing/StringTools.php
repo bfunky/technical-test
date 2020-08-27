@@ -1,5 +1,7 @@
 <?php
 
+namespace Isurance\Testing;
+
 class StringTools
 {
     public function capitalize($str)

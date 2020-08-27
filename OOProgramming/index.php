@@ -1,6 +1,6 @@
 <?php
 
-require_once 'autoload.php';
+require __DIR__ . '/../bootstrap.php';
 
 /**
  * You can start writing code here. Please do not change any skeleton classes.
@@ -9,3 +9,11 @@ require_once 'autoload.php';
  * You might notice that we are using Symfony2 UniversalClassLoader. Do not worry if you have
  * never used Symfony2, if you follow PSR-0 it will just work as expected.
  */
+use Isurance\OOProgramming\Dummy;
+
+$obj = new Dummy();
+echo $obj->whoIam() . PHP_EOL;
+
+
+
+

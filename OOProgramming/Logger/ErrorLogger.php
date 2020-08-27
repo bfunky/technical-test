@@ -1,13 +1,18 @@
 <?php
 
-namespace Logger;
+namespace Isurance\OOProgramming\Logger;
 
-use Observer\IObserver;
-use Observer\IObservable;
-use Parser\FeedParserBase;
+use Isurance\OOProgramming\Observer\IObserver;
+use Isurance\OOProgramming\Observer\IObservable;
+use Isurance\OOProgramming\Observer\Parser\FeedParserBase;
 
 class ErrorLogger implements IObserver
 {
+    public function pepe()
+    {
+        echo "pepe";
+    }
+
     public function notify(IObservable $objSource, $strMessage)
     {
         if ($objSource instanceof FeedParserBase) {
