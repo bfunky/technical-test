@@ -1,6 +1,6 @@
 <?php
 
-namespace Observer;
+namespace Isurance\OOProgramming\Observer;
 
 interface IObservable
 {

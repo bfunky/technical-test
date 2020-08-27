@@ -1,10 +1,10 @@
 <?php
 
-namespace Logger;
+namespace Isurance\OOProgramming\Logger;
 
-use Observer\IObservable;
-use Observer\IObserver;
-use Parser\FeedParserBase;
+use Isurance\OOProgramming\Observer\IObservable;
+use Isurance\OOProgramming\Observer\IObserver;
+USE Isurance\OOProgramming\Observer\Parser\FeedParserBase;
 
 class InfoLogger implements IObserver
 {
