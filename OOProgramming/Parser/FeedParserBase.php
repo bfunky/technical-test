@@ -1,6 +1,6 @@
 <?php
 
-namespace Isurance\OOProgramming\Observer\Parser;
+namespace Isurance\OOProgramming\Parser;
 
 use Isurance\OOProgramming\Observer\IObserver;
 use Isurance\OOProgramming\Observer\IObservable;

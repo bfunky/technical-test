@@ -4,7 +4,7 @@ namespace Isurance\OOProgramming\Logger;
 
 use Isurance\OOProgramming\Observer\IObserver;
 use Isurance\OOProgramming\Observer\IObservable;
-use Isurance\OOProgramming\Observer\Parser\FeedParserBase;
+use Isurance\OOProgramming\Parser\FeedParserBase;
 
 class ErrorLogger implements IObserver
 {
