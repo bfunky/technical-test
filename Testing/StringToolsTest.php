@@ -2,6 +2,8 @@
 
 namespace Isurance\Testing;
 
+use InvalidArgumentException;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -10,8 +12,43 @@ use PHPUnit\Framework\TestCase;
  */
 class StringToolsTest extends TestCase
 {
-    public function test_dummy()
+    /** @var StringTools */
+    private $stringTools;
+
+    protected function setUp()
     {
-        $this->assertTrue(true);
+        parent::setUp();
+        $this->stringTools = new StringTools();
+    }
+
+    /**
+     * @dataProvider stringsToCapitalizeProvider
+     */
+    public function testStringToolsWorksWithNoIssues(string $stringToCapitalize, string $expectedString)
+    {
+        $result = $this->stringTools->capitalize($stringToCapitalize);
+        self::assertEquals($expectedString, $result);
+    }
+
+    public function stringsToCapitalizeProvider()
+    {
+        return [
+            ['word', 'Word'],
+            ['two words', 'Two Words'],
+            ['My birthday is on October 8th', 'My Birthday Is On October 8th'],
+            ['year 1980', 'Year 1980']
+        ];
+    }
+
+    public function testStringToolsRaisesAnErrorBecauseParameterTypeIsNotValid()
+    {
+        self::expectException(InvalidArgumentException::class);
+        $this->stringTools->capitalize(new \stdClass());
+    }
+
+    public function testStringToolsRaisesAnErrorBecauseParameterIsNumeric()
+    {
+        self::expectException(InvalidArgumentException::class);
+        $this->stringTools->capitalize(1);
     }
 }
