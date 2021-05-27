@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  #Php Container
+  php:
+    build: docker/php
+    expose:
+      - 9000
+    volumes:
+      - .:/var/www/html
+    networks:
+      - isurance-ecosystem
+
+networks:
+  isurance-ecosystem: ~
